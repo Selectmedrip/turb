@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+p,h2,h3{
+  color: #ffffff;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -178,3 +181,73 @@ footer {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
   }
+
+
+
+
+
+
+
+  /* Общие стили для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+      margin: 10px;
+      padding: 0;
+  }
+
+  header {
+      font-size: 24px;
+      text-align: center;
+      padding: 10px;
+  }
+
+  #turbin-animation {
+      width: 100%;
+      height: auto;
+  }
+
+  .text {
+      font-size: 14px;
+      text-align: justify;
+      margin: 10px;
+  }
+
+  .button, .button2 {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 10px;
+  }
+
+  .contact-button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Дополнительные стили для очень маленьких экранов */
+@media (max-width: 480px) {
+  header {
+      font-size: 20px;
+  }
+
+  .text {
+      font-size: 12px;
+  }
+
+  .button, .button2 {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  #turbin-animation {
+      width: 80%;
+  }
+}
